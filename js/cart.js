@@ -71,6 +71,7 @@
     modalContainer.append(emptyButton);
 
     emptyButton.addEventListener('click', () => {
+        if(shoppingCart.length >= 1){
         Swal.fire({
             title: 'Esta seguro?',
             text: `Va a vaciar el carrito de compras!`,
@@ -93,7 +94,7 @@
             printCart();
         }
         })
-    })
+    }})
 };
 
 showCart.addEventListener('click', printCart)
