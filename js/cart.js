@@ -71,10 +71,28 @@
     modalContainer.append(emptyButton);
 
     emptyButton.addEventListener('click', () => {
-        emptyCart();
-        cartCounter();
-        saveCartStorage();
-        printCart();
+        Swal.fire({
+            title: 'Esta seguro?',
+            text: `Va a vaciar el carrito de compras!`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: 'rgba(204, 16, 2, 0.89)',
+            confirmButtonText: 'Eliminar',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+                'Productos eliminados',
+                `Carrito de compras vacio`,
+                'success'
+            )
+            emptyCart();
+            cartCounter();
+            saveCartStorage();
+            printCart();
+        }
+        })
     })
 };
 

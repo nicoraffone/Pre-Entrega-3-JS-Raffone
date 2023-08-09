@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../../assets/images/backgr.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 35%;
+  font-family: 'Open Sans', sans-serif; }
+
+.shoppingCart {
+  border-radius: 60px;
+  border: 2px solid black; }
+  .shoppingCart img {
+    width: 35px;
+    margin: 10px; }
+  .shoppingCart .shoppingCart:hover {
+    background-color: rgba(52, 202, 52, 0.945); }
+  .shoppingCart .shoppingCart:active {
+    background-color: rgba(41, 161, 41, 0.945); }
+  .shoppingCart .counter-cart {
+    background-color: #43a52a;
+    color: white;
+    border-radius: 40%;
+    border: 1px solid black;
+    font-size: 12px;
+    padding: 4px;
+    top: 2px;
+    right: 15px;
+    position: absolute;
+    display: none; }
+
+.modalContainer {
+  width: 35%;
+  margin: 0 64%;
+  max-height: 80vh;
+  color: white;
+  background-color: rgba(37, 37, 37, 0.829);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 4vh;
+  scrollbar-color: none;
+  backdrop-filter: blur(10px);
+  border-radius: 15px; }
+  .modalContainer .modalContainer::-webkit-scrollbar {
+    display: none; }
+  .modalContainer .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%; }
+    .modalContainer .modal-content h3 {
+      font-size: 13px;
+      width: 80px; }
+  .modalContainer .cartImage {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 15px; }
+  .modalContainer .modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    color: rgba(204, 16, 2, 0.89);
+    background-color: #1a1818f6;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white; }
+  .modalContainer .modal-title {
+    justify-self: start;
+    margin-left: 20px;
+    font-size: 24px; }
+  .modalContainer .modal-header-button {
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 33px; }
+    .modalContainer .modal-header-button .modal-header-button:hover {
+      color: white; }
+  .modalContainer .total-content {
+    margin: 10px;
+    font-size: 20px;
+    color: #a6f881;
+    padding: 20px;
+    margin-left: 60%; }
+  .modalContainer .deleteProduct {
+    cursor: pointer; }
+  .modalContainer .emptyButton {
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: rgba(204, 16, 2, 0.89);
+    color: white; }
+  .modalContainer .less {
+    cursor: pointer;
+    font-size: 15px;
+    color: white; }
+  .modalContainer .plus {
+    cursor: pointer;
+    font-size: 15px;
+    color: white; }
+
+.img-1 {
+  display: flex;
+  width: 100%;
+  height: 200px; }
+  .img-1 .logo-1 {
+    width: 25%; }
+  .img-1 .repuestos {
+    width: 75%;
+    border-left: 5px solid rgba(204, 16, 2, 0.89);
+    object-fit: cover; }
+
+.logo-2 {
+  border-radius: 30%;
+  height: 60px;
+  width: 60px;
+  border: 2px solid black; }
+
+.navbar {
+  background-color: rgba(204, 16, 2, 0.89); }
+  .navbar .navform {
+    margin-right: 25px; }
+    .navbar .navform input {
+      border: 2px solid black; }
+    .navbar .navform button {
+      border: 2px solid black; }
+
+.shop {
+  display: flex;
+  text-align: center;
+  border-top: 5px solid rgba(219, 12, 12, 0.534);
+  padding-top: 10px; }
+  .shop .filters {
+    width: 15%; }
+    .shop .filters ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      list-style: none; }
+      .shop .filters ul h3 {
+        color: white;
+        margin: auto;
+        text-align: center;
+        background-color: rgba(250, 44, 44, 0.493);
+        border-radius: 25px;
+        padding: 15px;
+        font-size: 25px;
+        width: 95%;
+        border: 3px double white; }
+      .shop .filters ul button {
+        background-color: rgba(160, 102, 102, 0.493);
+        color: white;
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid white;
+        width: 97%;
+        border-radius: 25px; }
+      .shop .filters ul .active {
+        border-radius: 25px 0 0 25px;
+        width: 100%;
+        position: relative;
+        border: 1px solid white;
+        border-right: none; }
+
+#pruebaDom {
+  background-color: rgba(160, 102, 102, 0.493);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-items: center;
+  margin: auto;
+  margin-right: 15%;
+  margin-bottom: 50px;
+  width: 70%;
+  height: 75vh;
+  overflow-y: scroll;
+  padding: 10px; }
+
+#pruebaDom::-webkit-scrollbar {
+  display: none; }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 10px;
+  border: 2px solid rgba(204, 16, 2, 0.89);
+  border-radius: 10px;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.781);
+  max-width: 175px;
+  max-height: 38vh; }
+  .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain; }
+  .card p {
+    font-size: 15px; }
+  .card button {
+    padding: 5px;
+    background-color: rgba(204, 16, 2, 0.89);
+    color: white;
+    border-radius: 15px;
+    border: 2px solid black; }
+  .card button:hover {
+    background-color: rgba(139, 9, 0, 0.89); }
+  .card button:active {
+    background-color: rgba(255, 255, 255, 0.781);
+    color: rgba(204, 16, 2, 0.89); }
+
+.carousel {
+  margin: 5vh 0 5vh 0; }
+
+.section-1 {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .section-1 h5 {
+    font-size: 17px;
+    color: rgba(204, 16, 2, 0.89); }
+  .section-1 .d-1 {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 230px;
+    border-bottom: 2px solid black; }
+  .section-1 .d-2 {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 270px; }
+    .section-1 .d-2 .tarjetas img {
+      width: 50px;
+      margin: 5px; }
+  .section-1 .truck {
+    width: 60px;
+    margin-bottom: 10px; }
+
+footer {
+  background-color: rgba(204, 16, 2, 0.89);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  text-align: center;
+  color: white; }
+  footer img {
+    margin: 2%; }
+  footer h2 {
+    font-size: 13px;
+    text-decoration: underline;
+    margin-top: 12px; }
+  footer p {
+    font-size: 9px; }

@@ -7,7 +7,7 @@ const products = [
         brand: 'prosport',
         img: "./assets/images/productos/relojes/psturbodig.webp",
         amount: 1,
-        type: 1,
+        type: "reloj",
     },
     {
         id:11,
@@ -16,7 +16,7 @@ const products = [
         brand: 'orlan rober',
         img: "./assets/images/productos/relojes/psturbo.webp",
         amount: 1,
-        type: 1,
+        type: "reloj",
     },
 
                             //! TURBOCOMPRESORES
@@ -27,7 +27,7 @@ const products = [
         brand: 'garrett',
         img: "./assets/images/productos/turbos/t3.webp",
         amount: 1,
-        type: 2,
+        type: "turbo",
     },
     {
         id:21,
@@ -36,7 +36,7 @@ const products = [
         brand: 'master power',
         img: "./assets/images/productos/turbos/t3.webp",
         amount: 1,
-        type: 2,
+        type: "turbo",
     },
 
                             //! REFRIGERACION
@@ -47,7 +47,7 @@ const products = [
         brand: 'ftx',
         img: "./assets/images/productos/refrigeracion/intercooler-ftx.webp",
         amount: 1,
-        type: 3,
+        type: "refri",
     },
     {
         id:31,
@@ -56,7 +56,7 @@ const products = [
         brand: 'ftx',
         img: "./assets/images/productos/refrigeracion/intercooler-ftx.webp",
         amount: 1,
-        type: 3,
+        type: "refri",
     },
     {
         id:32,
@@ -65,7 +65,7 @@ const products = [
         brand: 'ftx',
         img: "./assets/images/productos/refrigeracion/intercooler-ftx.webp",
         amount: 1,
-        type: 3,
+        type: "refri",
     },
 
                             //! INYECCION
@@ -76,7 +76,7 @@ const products = [
         brand: 'fueltech',
         img: "./assets/images/productos/inyeccion/ft450.webp",
         amount: 1,
-        type: 4,
+        type: "ecu",
     },
     {
         id:41,
@@ -85,7 +85,7 @@ const products = [
         brand: 'fueltech',
         img: "./assets/images/productos/inyeccion/ft450.webp",
         amount: 1,
-        type: 4,
+        type: "ecu",
     },
     {
         id:42,
@@ -95,7 +95,7 @@ const products = [
         img: "./assets/images/productos/inyeccion/ft450.webp",
         stock: 15,
         amount: 1,
-        type: 4,
+        type: "ecu",
     },
     {
         id:43,
@@ -104,7 +104,7 @@ const products = [
         brand: 'fueltech',
         img: "./assets/images/productos/inyeccion/ft450.webp",
         amount: 1,
-        type: 4,
+        type: "ecu",
     },
 
                             //! LUBRICANTES
@@ -115,7 +115,7 @@ const products = [
         brand: 'motul',
         img: "./assets/images/productos/lubricantes/motul-300v.webp",
         amount: 1,
-        type: 5,
+        type: "lubricante",
     },
     {
         id:51,
@@ -124,6 +124,6 @@ const products = [
         brand: 'motul',
         img: "./assets/images/productos/lubricantes/motul-300v.webp",
         amount: 1,
-        type: 5,
+        type: "lubricante",
     },
 ]

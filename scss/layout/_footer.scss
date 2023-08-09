@@ -1,0 +1,44 @@
+.section-1 {
+    background-color: lightgray;
+    @include flex(row, space-evenly, center);
+    h5 {
+        font-size: 17px;
+        color: $color-principal;
+    }
+    .d-1 {
+        margin-top: 20px;
+        text-align: center;
+        max-width: 230px;
+        border-bottom: 2px solid black;
+    }
+    .d-2 {
+        margin-top: 20px;
+        text-align: center;
+        max-width: 270px;
+        .tarjetas img {
+            width: 50px;
+            margin: 5px; }
+    }
+    .truck {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    background-color: $color-principal;
+    @include flex(row, space-around, stretch);
+    text-align: center;
+    color: white;
+    img {
+        margin: 2%;
+    }
+    h2 {
+        font-size: 13px;
+        text-decoration: underline;
+        margin-top: 12px;
+    }
+    p {
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,99 @@
+.shop{
+    display: flex;
+    text-align: center;
+    border-top: 5px solid rgba(219, 12, 12, 0.534);
+    padding-top: 10px;
+    .filters{
+        width: 15%;
+        ul{
+        @include flex(column, center, stretch);
+        list-style: none;
+        h3{
+            color: white;
+            margin: auto;
+            text-align: center;
+            background-color: rgba(250, 44, 44, 0.493);
+            border-radius: 25px;
+            padding: 15px;
+            font-size: 25px;
+            width: 95%;
+            border: 3px double white;
+        }
+        button{
+            background-color: rgba(160, 102, 102, 0.493);
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid white;
+            width: 97%;
+            border-radius: 25px;
+        }
+        .active{
+            border-radius: 25px 0 0 25px;
+            width: 100%;
+            position: relative;
+            border: 1px solid white;
+            border-right: none;
+        }
+        }
+    }
+}
+
+#pruebaDom{
+    background-color: rgba(160, 102, 102, 0.493);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+    margin: auto;
+    margin-right: 15%;
+    margin-bottom: 50px;
+    width: 70%;
+    height: 75vh;
+    overflow-y: scroll;
+    padding: 10px;
+}
+#pruebaDom::-webkit-scrollbar {
+    display: none;
+}
+
+.card{
+    @include flex (column, flex-start, center);
+    text-align: center;
+    gap: 12px;
+    padding: 10px;
+    border: 2px solid $color-principal;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.781);
+    max-width: 175px;
+    max-height: 38vh;
+    img{
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+    p{
+        font-size: 15px;
+    }
+    button{
+        padding: 5px;
+        background-color: $color-principal;
+        color: white;
+        border-radius: 15px;
+        border: 2px solid black;
+    }
+    button:hover{
+        background-color: rgba(139, 9, 0, 0.89)
+    }
+    button:active{
+        background-color: rgba(255, 255, 255, 0.781);
+        color: $color-principal;
+    }
+}
+
+.carousel{
+    margin: 5vh 0 5vh 0;
+}

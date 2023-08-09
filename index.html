@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/images/logo-raffo.png">
     <title>Raffo Competicion</title>
 </head>
@@ -32,32 +35,7 @@
                             <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Tienda</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Productos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Relojes</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Turbocompresores</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Refrigeracion</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Inyección</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Lubricantes</a></li>
-                            </ul>
+                            <a class="nav-link" href="#h3-filter">Tienda</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Contacto</a>
@@ -109,7 +87,22 @@
         </button>
     </div>
 
-    <div id="pruebaDom"></div>
+    <section class="shop">
+        <aside class="filters">
+            <nav>
+                <ul>
+                    <h3 id="h3-filter">Filtrar Productos</h3>
+                    <li><button id="todos" class="filter-button active">Todos los Productos</button></li>
+                    <li><button id="reloj" class="filter-button">Relojes Competicion</button></li>
+                    <li><button id="turbo" class="filter-button">Turbocompresores</button></li>
+                    <li><button id="refri" class="filter-button">Refrigeracion</button></li>
+                    <li><button id="ecu" class="filter-button">Inyeccion</button></li>
+                    <li><button id="lubricante" class="filter-button">Lubricantes</button></li>
+                </ul>
+            </nav>
+        </aside>
+        <div id="pruebaDom"></div>
+    </section>
 
     <section class="section-1">
         <div class="d-1">
@@ -167,6 +160,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
     <script src="./js/stock.js"></script>
     <script src="./js/App.js"></script>
     <script src="./js/cart.js"></script>

@@ -1,0 +1,111 @@
+.shoppingCart{
+    border-radius: 60px;
+    border: 2px solid black;
+    img{
+        width: 35px;
+        margin: 10px;
+    };
+    .shoppingCart:hover{
+        background-color: rgba(52, 202, 52, 0.945);
+    };
+    .shoppingCart:active{
+        background-color: rgba(41, 161, 41, 0.945);
+    };
+    .counter-cart{
+        background-color: rgb(67, 165, 42);
+        color: white;
+        border-radius: 40%;
+        border: 1px solid black;
+        font-size: 12px;
+        padding: 4px;
+        top: 2px;
+        right: 15px;
+        position: absolute;
+        display: none;
+    };
+}
+
+.modalContainer {
+    width: 35%;
+    margin: 0 64%;
+    max-height: 80vh;
+    color: white;
+    // border: 5px groove rgb(230, 230, 230);
+    background-color: rgba(37, 37, 37, 0.829);
+    @include flex(column, flex-start, center);
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 4vh;
+    scrollbar-color: none;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    .modalContainer::-webkit-scrollbar {
+        display: none;
+    }
+    .modal-content{
+        @include flex(row, space-between, center);
+        width: 85%;
+        h3 {
+            font-size: 13px;
+            width: 80px;
+        }
+    }
+    .cartImage{
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin: 0 15px;
+    }
+    .modal-header {
+        @include flex(row, space-around, stretch);
+        width: 100%;
+        color: $color-principal;
+        background-color: #1a1818f6;
+        margin-bottom: 20px;
+        border-bottom: 2px solid white;
+    }
+    .modal-title {
+        justify-self: start;
+        margin-left: 20px;
+        font-size: 24px;
+    }
+    .modal-header-button {
+        cursor: pointer;
+        margin-right: 20px;
+        font-size: 33px;
+        .modal-header-button:hover{
+            color: white;
+        }
+    }
+    .total-content {
+        margin: 10px;
+        font-size: 20px;
+        color: rgb(166, 248, 129);
+        padding: 20px;
+        margin-left: 60%;
+    }
+    .deleteProduct {
+        cursor: pointer;
+    }
+    .emptyButton{
+        margin-bottom: 50px;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        border: 2px solid white;
+        border-radius: 25px;
+        background-color: $color-principal;
+        color: white;
+    }
+    .less{
+        cursor: pointer;
+        font-size: 15px;
+        color: white;
+    };
+    .plus{
+        cursor: pointer;
+        font-size: 15px;
+        color: white;
+    }
+}
