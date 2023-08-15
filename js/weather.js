@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
 
 function callAPI(city, country){
     const apiId = '5f3260bb1b33d956f4ad5e2ba5f09e91';
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiId}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city},${country}&appid=${apiId}`;
 
     fetch(url)
         .then(data => {
@@ -38,9 +38,9 @@ function callAPI(city, country){
 function showWeather(data){
     const {name, main:{temp, temp_min, temp_max}, weather:[arr]} = data;
 
-    const degrees = kelvinToCentigrade(temp);
-    const min = kelvinToCentigrade(temp_min);
-    const max = kelvinToCentigrade(temp_max);
+    const degrees = temp;
+    const min = temp_min;
+    const max = temp_max;
     const date = new Date().toLocaleDateString();
 
     const content = document.createElement('div');
@@ -69,9 +69,9 @@ function showError(message){
     }, 3000);
 }
 
-function kelvinToCentigrade(temp){
-    return parseInt(temp - 273.15);
-}
+// function kelvinToCentigrade(temp){
+//     return parseInt(temp - 273.15);
+// }
 
 function clearHTML(){
     result.innerHTML = '';
