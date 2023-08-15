@@ -79,7 +79,7 @@
     .total-content {
         margin: 10px;
         font-size: 20px;
-        color: rgb(166, 248, 129);
+        color: rgb(139, 245, 89);
         padding: 20px;
         margin-left: 60%;
     }
@@ -94,6 +94,16 @@
         border: 2px solid white;
         border-radius: 25px;
         background-color: $color-principal;
+        color: white;
+    }
+    .buyButton{
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        border: 2px solid white;
+        border-radius: 25px;
+        background-color: rgb(65, 141, 30);
         color: white;
     }
     .less{

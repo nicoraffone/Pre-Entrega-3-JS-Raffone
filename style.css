@@ -89,7 +89,7 @@ body {
   .modalContainer .total-content {
     margin: 10px;
     font-size: 20px;
-    color: #a6f881;
+    color: #8bf559;
     padding: 20px;
     margin-left: 60%; }
   .modalContainer .deleteProduct {
@@ -102,6 +102,15 @@ body {
     border: 2px solid white;
     border-radius: 25px;
     background-color: rgba(204, 16, 2, 0.89);
+    color: white; }
+  .modalContainer .buyButton {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: #418d1e;
     color: white; }
   .modalContainer .less {
     cursor: pointer;

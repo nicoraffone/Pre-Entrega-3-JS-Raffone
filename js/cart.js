@@ -64,11 +64,30 @@
     totalBuy.className = 'total-content';
     totalBuy.innerHTML = `Total: $${total}`;
     modalContainer.append(totalBuy);
+    
+    const buyButton = document.createElement('button');
+    buyButton.className = 'buyButton';
+    buyButton.innerText = 'Comprar';
+    modalContainer.append(buyButton);
+
+    buyButton.addEventListener('click', () => {
+        Toastify({
+            text: "Gracias por su compra!",
+            duration: 3000,
+            gravity: "bottom",
+            position: "center",
+            style: {
+            background: "rgb(65, 141, 30)",
+            border: "3px solid white",
+            }}).showToast();
+    });
+
 
     const emptyButton = document.createElement('button');
     emptyButton.className = 'emptyButton';
     emptyButton.innerText = 'Vaciar carrito';
     modalContainer.append(emptyButton);
+
 
     emptyButton.addEventListener('click', () => {
         if(shoppingCart.length >= 1){
