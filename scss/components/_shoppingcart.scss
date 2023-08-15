@@ -1,6 +1,7 @@
 .shoppingCart{
     border-radius: 60px;
     border: 2px solid black;
+    margin-right: 20px;
     img{
         width: 35px;
         margin: 10px;
@@ -14,20 +15,20 @@
     .counter-cart{
         background-color: rgb(67, 165, 42);
         color: white;
-        border-radius: 40%;
+        border-radius: 5px;
         border: 1px solid black;
-        font-size: 12px;
+        font-size: 14px;
         padding: 4px;
         top: 2px;
-        right: 15px;
+        right: 34px;
         position: absolute;
         display: none;
     };
 }
 
 .modalContainer {
-    width: 35%;
-    margin: 0 64%;
+    width: 27%;
+    margin: 0 72%;
     max-height: 80vh;
     color: white;
     // border: 5px groove rgb(230, 230, 230);
@@ -40,9 +41,6 @@
     scrollbar-color: none;
     backdrop-filter: blur(10px);
     border-radius: 15px;
-    .modalContainer::-webkit-scrollbar {
-        display: none;
-    }
     .modal-content{
         @include flex(row, space-between, center);
         width: 85%;
@@ -52,10 +50,10 @@
         }
     }
     .cartImage{
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         object-fit: contain;
-        margin: 0 15px;
+        margin: 10px;
     }
     .modal-header {
         @include flex(row, space-around, stretch);
@@ -108,4 +106,7 @@
         font-size: 15px;
         color: white;
     }
+}
+.modalContainer::-webkit-scrollbar {
+    display: none;
 }

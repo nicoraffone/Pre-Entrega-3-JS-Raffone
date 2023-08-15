@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#h3-filter">Tienda</a>
@@ -44,11 +44,6 @@
                             <a class="nav-link" href="#">Clientes</a>
                         </li>
                     </ul>
-                    <form class="d-flex navform" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Escribir producto"
-                            aria-label="Search">
-                        <button class="btn btn-light" type="submit">Buscar</button>
-                    </form>
                     <button class="shoppingCart" id="shopping-cart"><img src="assets/images/cart.png" alt=""><span
                             id="counter" class="counter-cart"></span></button>
                 </div>
@@ -57,35 +52,55 @@
         <div id="modal-container" class="modalContainer"></div>
     </header>
 
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner container-lg">
-            <div class="carousel-item active">
-                <img src="./assets/images/carrousel/c1.jpg" class="d-block w-100" alt="...">
+    <section class="section1">
+        <section class="weather-content">
+            <h1>¿Vas a visitar circuito? Checkea el clima aca!</h1>
+            <div class="result">
+                <p>Agrege cuidad y pais</p>
             </div>
-            <div class="carousel-item">
-                <img src="./assets/images/carrousel/c2.jpg" class="d-block w-100" alt="...">
+            <form action="" method="POST" class="get-weather">
+                <input type="text" name="city" id="city" placeholder="Escribi tu ciudad...">
+                <select name="" id="country">
+                    <option disabled selected value="">Elegi tu pais</option>
+                    <option value="AR">Argentina</option>
+                    <option value="CO">Colombia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="MX">México</option>
+                    <option value="PE">Perú</option>
+                </select>
+                <input type="submit" name="" id="" value="Obtener clima">
+            </form>
+        </section>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner container-lg">
+                <div class="carousel-item active">
+                    <img src="./assets/images/carrousel/c1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carrousel/c2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carrousel/c3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carrousel/c4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carrousel/c5.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="./assets/images/carrousel/c3.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/images/carrousel/c4.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/images/carrousel/c5.jpg" class="d-block w-100" alt="...">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
-    </div>
+    </section>
 
     <section class="shop">
         <aside class="filters">
@@ -163,6 +178,7 @@
     <script src="./js/stock.js"></script>
     <script src="./js/App.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="./js/weather.js"></script>
 </body>
 
 </html>
