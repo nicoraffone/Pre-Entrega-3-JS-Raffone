@@ -71,6 +71,7 @@
     modalContainer.append(buyButton);
 
     buyButton.addEventListener('click', () => {
+        if(shoppingCart.length > 0){
         Toastify({
             text: "Gracias por su compra!",
             duration: 3000,
@@ -79,7 +80,7 @@
             style: {
             background: "rgb(65, 141, 30)",
             border: "3px solid white",
-            }}).showToast();
+            }}).showToast()};
     });
 
 
